@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVISAS</title>
+    <link rel="stylesheet" href="index.css">   
+</head>
+<body>
+    <!-- titulo -->
+    <header>
+        <h1>DIVISAS </h1>
+        <img src="./img/dollar (1).png" alt="iconMoney">
+    </header>
+    <!-- conversor -->
+    <main>
+        <div class="contenedorConversor">
+            <h2>Conversor de monedas</h2>
+            <div class="contenedorOption">
+                <!-- Opcion de conversion -->
+                <div class="contenedorOptionSelect">
+                    <p>Selecione una opción</p>
+                    <select name="opcionConversion" id="opcionConversion">
+                        <option value="Selecione">Selecione una conversión</option>
+                        <option value="USD">USD a EUR</option>
+                        <option value="EUR">EUR a COP</option>
+                        <option value="COP">COP a USD</option>
+                    </select>   
+                </div>
+                <!-- Ingreso de datos -->
+                <div class="contenedorOptionNumberOne">
+                    <p id="textoUno">Ingrese monto:</p>
+                    <input type="number"> 
+                </div>   
+                <!-- Salida de datos / Resultado -->
+                <div class="contenedorOptionNumberTwo">
+                    <p id="textoDos">Resultado en:</p>
+                    <input type="number" readonly>
+                </div>                       
+            </div>
+            <!-- Envio de datos / Button-->
+            <div class="button">
+              <button>conventir<img src="./img/save-money.png"></button>
+            </div>
+        </div>                              
+    </main>
+    <fieldset>
+        <legend style="color: white; font-size: 20px;">Tasa de cambio</legend>
+        <ul>
+            <li> De USD a EUR: 1 USD = 0.85 EUR (<span>comisión del 2%</span>).</li> <br>
+            <li> De EUR a COP: 1 EUR = 4,500 COP (<span>comisión del 3%</span>).</li> <br>
+            <li> De COP a USD: 1,000 COP = 0.25 USD (<span>comisión del 1%</span>).</li> <br>
+        </ul>
+            
+        
+    </fieldset>  
+    <!-- Tabla -->
+    <script src="index.js"></script>
+</body>
+</html>
